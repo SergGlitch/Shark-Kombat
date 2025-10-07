@@ -28,14 +28,18 @@ let data = {
             './ui/assets/shark_4.png',
             './ui/assets/shark_5.png',
             './ui/assets/shark_6.png',
+            './ui/assets/shark_7.png',
+            './ui/assets/shark_8.png',
+            './ui/assets/shark_9.png',
+            './ui/assets/shark_10.png',
         ],
     coin_per_sec:1,
-    energy:1000
+    energy:500
 };
 
 function energyRecovery(){
     setInterval(()=>{
-        if(data.energy<1000){
+        if(data.energy<500){
             data.energy++
             energyId.innerHTML = data.energy;
         }
